@@ -1,0 +1,19 @@
+import pandas as pd
+import numpy as np
+first_series = pd.Series(list('veranzi'))#pass list as an argument
+first_series
+np_names = np.array(['veranzi','kasiva', 'ruth','sly','adisa'])
+s_Series = pd.Series(np_names)
+s_Series
+dict_countrygdp = pd.Series([24.33,45,23,22,77.8,99, 97], index=['kenya','uganda','nigeria','niger','sudan','egypt','rwanda'])
+dict_countrygdp
+dict_countrygdp[0]#accessing elements in a series
+dict_countrygdp[0:5] #accessing first 5 elements
+dict_countrygdp.loc['kenya']#accessing by name or index
+dict_countrygdp.iloc[0]#look up by position
+first_vector_series = pd.Series([1,2,3,4], index = ['v','e','r','a'])
+second_vector_series = pd.Series([10,20,30,40], index = ['v','e','r','a'])
+first_vector_series
+second_vector_series =  pd.Series([10,20,30,40], index = ['v','e','a','r'])
+#creating dataframe from list
+olympic_data_list = {'hostcity':['london','kenya','ug','TZ','rwanda'], 'year':[2002,2012,2008,2004,1996],'no of participating countries':[205,204,200,201,197]}
